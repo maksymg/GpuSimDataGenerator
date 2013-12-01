@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_45" class="java.beans.XMLDecoder">
+ <object class="com.gpusim2.config.GridSimConfig">
+  <void property="gridlets">
+   <void method="add">
+    <object class="com.gpusim2.config.GridSimGridletConfig">
+     <void property="count">
+      <int>3</int>
+     </void>
+     <void property="inputSize">
+      <long>48</long>
+     </void>
+     <void property="length">
+      <double>74.317824</double>
+     </void>
+     <void property="outputSize">
+      <long>16</long>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="linkBaudRate">
+   <double>1.0E10</double>
+  </void>
+  <void property="resources">
+   <void method="add">
+    <object class="com.gpusim2.config.GridSimResourceConfig">
+     <void property="arch">
+      <string>gpusim.MatrixMultiply-ExperimentPlugin.Arch</string>
+     </void>
+     <void property="baudRate">
+      <double>1.0E10</double>
+     </void>
+     <void property="costPerSec">
+      <double>1.0</double>
+     </void>
+     <void property="machines">
+      <void method="add">
+       <object class="com.gpusim2.config.GridSimMachineConfig">
+        <void property="count">
+         <int>1</int>
+        </void>
+        <void property="peCount">
+         <int>384</int>
+        </void>
+        <void property="peRating">
+         <int>10000</int>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="com.gpusim2.config.GridSimMachineConfig">
+        <void property="count">
+         <int>1</int>
+        </void>
+        <void property="peCount">
+         <int>8</int>
+        </void>
+        <void property="peRating">
+         <int>1000</int>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="os">
+      <string>gpusim.MatrixMultiply-ExperimentPlugin.OS</string>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>
